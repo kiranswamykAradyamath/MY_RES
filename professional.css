@@ -1,0 +1,26 @@
+/* Professional layout refinements: a single grid, deliberate rhythm, and restrained color. */
+:root { --navy:#12335d; --ink:#182b46; --muted:#63728a; --paper:#f8fafc; --line:#dce4ed; --accent:#e46d48; }
+body { background:var(--paper); }
+.site-header { height:70px; padding:0 max(5vw,32px); background:rgba(255,255,255,.94); border-bottom:1px solid #e6ebf1; }
+nav { gap:18px; }
+nav a { color:#52627a; font-size:10px; }
+.hero { min-height:680px; padding-top:135px; padding-bottom:52px; }
+.hero h1 { max-width:980px; font-size:clamp(50px,7.6vw,108px); }
+.hero-role { margin-top:27px; }.hero-actions { margin-top:26px; }.hero-copy { max-width:540px; }
+.hero-side { margin-top:24px; }.scroll-cue { margin-top:22px; }
+.section { padding-top:90px; padding-bottom:90px; }
+.split-section { grid-template-columns:180px minmax(0,760px); justify-content:center; gap:54px; }
+.section-index { margin-bottom:16px; }.lead { margin:25px 0 13px; font-size:18px; line-height:1.65; }
+.section-title { max-width:1160px; margin:0 auto 40px; align-items:end; }
+h2 { font-size:clamp(38px,4.7vw,66px); }
+.education-table { max-width:1160px; margin:0 auto; }.ed-row { grid-template-columns:1.05fr 2.1fr .7fr .7fr; padding:17px 3px; }
+.course-card { margin:28px auto 0; max-width:930px; padding:27px 31px; }.course-card>p:last-child { margin-bottom:0; }
+.skills-grid { max-width:930px; margin:0 auto; gap:0 52px; }.skills-grid>div { padding:17px 0; }
+.projects-section { background:#fff; }.project-grid { max-width:1160px; margin:0 auto; }.project-card { min-height:345px; padding:26px; }.project-card h3 { margin:32px 0 12px; }.project-card>p { line-height:1.65; }
+.cert-grid { max-width:1160px; margin:0 auto; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }.cert-card { min-height:200px; padding:17px; border-radius:2px; }.cert-card h3 { font-size:13px; }.upload-box { min-height:82px; }
+.achievement-list { max-width:930px; margin:0 auto; }.achievement-list article { padding:16px 0; }
+.contact { padding-top:100px; padding-bottom:58px; }.contact-bottom { max-width:1160px; margin:55px auto 0; }
+.button { border-radius:2px; }.socials a { transition:background .2s,border .2s,color .2s; }
+.reveal { opacity:0; transform:translateY(14px); transition:opacity .5s ease,transform .5s ease; }.reveal.visible { opacity:1; transform:none; }
+@media (max-width:800px) { .site-header{height:64px}.section{padding-top:65px;padding-bottom:65px}.hero{min-height:620px;padding-top:112px}.split-section{display:block}.split-section .section-index{margin-bottom:18px}.section-title{margin-bottom:31px}.ed-row{grid-template-columns:1fr 1.55fr;padding:15px 2px}.course-card{margin-top:24px}.cert-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.project-card{min-height:310px}.achievement-list{margin:0}.contact{padding-top:74px} }
+@media (max-width:460px) { nav{padding:16px 7vw}.hero{min-height:600px}.hero h1{font-size:48px}.section-shell{padding-left:22px;padding-right:22px}.section{padding-top:55px;padding-bottom:55px}.cert-grid{grid-template-columns:1fr}.cert-card{min-height:182px}.contact-bottom p{line-height:1.8}.email-link{font-size:16px} }
